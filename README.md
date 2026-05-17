@@ -1,10 +1,10 @@
-# 🌌 Know Everything
+#  Know Everything
 
 > Your all-knowing AI companion — powered by **Java Spring Boot** + **React (Vite)** + **Ollama (local AI, FREE)**
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Browser (React + Vite)
@@ -18,7 +18,7 @@ llama3.2 / mistral / any model
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Install these first:
 
@@ -31,7 +31,7 @@ Install these first:
 
 ---
 
-## 🚀 Step-by-Step Setup
+## Step-by-Step Setup
 
 ### Step 1 — Install & Start Ollama
 
@@ -92,7 +92,7 @@ Frontend starts at: http://localhost:5173
 
 ---
 
-## 🌐 Open the Website
+##  Open the Website
 
 Open your browser and go to:
 
@@ -102,7 +102,7 @@ http://localhost:5173
 
 ---
 
-## 🔧 Change the AI Model
+##  Change the AI Model
 
 Edit `backend/src/main/resources/application.properties`:
 
@@ -119,7 +119,7 @@ Then restart the backend: `mvn spring-boot:run`
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -143,7 +143,7 @@ curl -X POST http://localhost:8080/api/v1/chat \
 
 ---
 
-## 🧠 Knowledge Categories
+##  Knowledge Categories
 
 | ID | Category | Examples |
 |----|----------|---------|
@@ -162,7 +162,7 @@ curl -X POST http://localhost:8080/api/v1/chat \
 
 ---
 
-## 🗄️ Database (H2 — Built-in)
+##  Database (H2 — Built-in)
 
 Chat history is automatically saved. View it at:
 ```
@@ -174,7 +174,7 @@ Password: (leave empty)
 
 ---
 
-## 📦 Build for Production
+##  Build for Production
 
 ### Backend
 ```bash
@@ -192,7 +192,7 @@ npm run build
 
 ---
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```
 know-everything/
@@ -239,7 +239,7 @@ know-everything/
 
 ---
 
-## ❓ Troubleshooting
+##  Troubleshooting
 
 **"Ollama is DOWN" error?**
 ```bash
