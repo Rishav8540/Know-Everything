@@ -1,0 +1,109 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-deep:    #070711;
+  --bg-dark:    #0D0D1E;
+  --bg-card:    rgba(255,255,255,0.04);
+  --bg-card-hover: rgba(255,255,255,0.07);
+  --border:     rgba(255,255,255,0.08);
+  --border-h:   rgba(255,255,255,0.18);
+  --text-1:     #FFFFFF;
+  --text-2:     rgba(255,255,255,0.6);
+  --text-3:     rgba(255,255,255,0.35);
+  --accent:     #7C6FFF;
+  --accent-2:   #00D9B7;
+  --glow:       rgba(124,111,255,0.15);
+  --font-head:  'Syne', sans-serif;
+  --font-body:  'Inter', sans-serif;
+  --font-code:  'JetBrains Mono', monospace;
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-1);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(124,111,255,0.3); border-radius: 2px; }
+
+/* Selections */
+::selection { background: rgba(124,111,255,0.3); }
+
+/* Markdown content inside chat */
+.ai-message h1, .ai-message h2, .ai-message h3 {
+  font-family: var(--font-head);
+  margin: 1rem 0 0.5rem;
+  color: #fff;
+}
+.ai-message h1 { font-size: 1.2rem; }
+.ai-message h2 { font-size: 1.05rem; }
+.ai-message h3 { font-size: 0.95rem; color: var(--accent-2); }
+.ai-message p { margin-bottom: 0.6rem; line-height: 1.7; }
+.ai-message ul, .ai-message ol { padding-left: 1.4rem; margin-bottom: 0.6rem; }
+.ai-message li { margin-bottom: 0.3rem; line-height: 1.6; }
+.ai-message strong { color: #fff; font-weight: 600; }
+.ai-message em { color: var(--accent-2); font-style: italic; }
+.ai-message code {
+  font-family: var(--font-code);
+  background: rgba(124,111,255,0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: #A78BFA;
+}
+.ai-message pre {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(124,111,255,0.2);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.8rem 0;
+}
+.ai-message pre code {
+  background: none;
+  padding: 0;
+  color: #e2e8f0;
+  font-size: 0.82rem;
+}
+.ai-message blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--text-2);
+  margin: 0.8rem 0;
+  font-style: italic;
+}
+.ai-message table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  font-size: 0.85rem;
+}
+.ai-message th {
+  background: rgba(124,111,255,0.15);
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(124,111,255,0.3);
+}
+.ai-message td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.ai-message a { color: var(--accent-2); text-decoration: underline; }
+
+@keyframes fadeUp   { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pulse    { 0%,100%{opacity:0.3} 50%{opacity:1} }
+@keyframes spin     { to { transform: rotate(360deg); } }
+@keyframes shimmer  { 0%{background-position:200% center} 100%{background-position:-200% center} }
+@keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes blink    { 0%,100%{opacity:1} 50%{opacity:0} }

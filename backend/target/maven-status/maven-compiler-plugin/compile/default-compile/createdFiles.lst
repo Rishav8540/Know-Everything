@@ -1,0 +1,17 @@
+com\knoweverything\service\ChatHistoryRepository.class
+com\knoweverything\controller\ChatController.class
+com\knoweverything\model\ChatHistory$ChatHistoryBuilder.class
+com\knoweverything\KnowEverythingApplication.class
+com\knoweverything\config\OllamaConfig.class
+com\knoweverything\model\ChatResponse.class
+com\knoweverything\model\OllamaRequest$OllamaRequestBuilder.class
+com\knoweverything\service\OllamaService.class
+com\knoweverything\model\ChatHistory.class
+com\knoweverything\model\OllamaRequest$OllamaMessage.class
+com\knoweverything\model\ChatRequest$MessageHistory.class
+com\knoweverything\model\OllamaRequest.class
+com\knoweverything\service\ChatService.class
+com\knoweverything\model\ChatRequest.class
+com\knoweverything\model\ChatResponse$ChatResponseBuilder.class
+com\knoweverything\service\SystemPromptService.class
+com\knoweverything\config\CorsConfig.class
